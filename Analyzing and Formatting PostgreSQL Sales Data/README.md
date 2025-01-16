@@ -1,4 +1,4 @@
-Analyzing and Formatting PostgreSQL Sales Data.
+Analyzing and Formatting PostgreSQL Sales Data - "DataCamp Project"
 	
 Cleaning incorrect data types and missing values.
 
