@@ -1,4 +1,4 @@
-Analyzing Motorcycle Part Sales
+Analyzing Motorcycle Part Sales - "DataCamp Project"
 
 Derive insights about motorcycle part sales over time across multiple warehouse sites!
 
