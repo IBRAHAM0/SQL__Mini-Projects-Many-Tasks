@@ -10,10 +10,10 @@ CREATE TABLE student_performance (
 	)
 
 	
--- 2. Copying the records from the CSV source file to insert in our table.
-	
+-- 2. Importing records from the source file into the table.
+
 COPY student_performance (hours_studied, attendance, extracurricular_activities, sleep_hours, tutoring_sessions, exam_score)
-FROM 'C:\Factors that Fuel Student Performance\data\student_performance.csv'
+FROM 'D:\Factors that Fuel Student Performance\data\student_performance.csv'
 DELIMITER ','
 CSV HEADER;
 
