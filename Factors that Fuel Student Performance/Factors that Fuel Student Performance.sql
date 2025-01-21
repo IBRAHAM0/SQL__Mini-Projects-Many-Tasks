@@ -1,3 +1,5 @@
+-- Creating and defining the table "student_performance" structure, column names, and their data types.
+
 CREATE TABLE student_performance (
 	hours_studied  Int, 
 	attendance  Int, 
@@ -7,7 +9,13 @@ CREATE TABLE student_performance (
 	exam_score  Int
 	)
 
--- 2. Import the dataset CSV file via the "pgAdmin4" interface (without any code)
+	
+-- 2. Copying the records from the CSV source file to insert in our table.
+	
+COPY student_performance (hours_studied, attendance, extracurricular_activities, sleep_hours, tutoring_sessions, exam_score)
+FROM 'C:\Factors that Fuel Student Performance\data\student_performance.csv'
+DELIMITER ','
+CSV HEADER;
 
 
 -- 3. View the dataset to understand its structure, column names, data types, and overall content. 
