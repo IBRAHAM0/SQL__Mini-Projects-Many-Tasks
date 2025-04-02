@@ -8,15 +8,26 @@
 Working on behalf of a company that sells motorcycle parts, you'll dig into their data to help them understand their revenue streams. You'll build up a query to find out 
 how much net revenue they are generating across their product lines, segregating by date and warehouse.
 
+
 ## The Task:
 
-	- **Find out how much 'Wholesale' net revenue each "product_line" generated per month per "warehouse" in the dataset:**
-			
-		- **The query should be saved as revenue_by_product_line using the SQL cell provided, and contain the following:**
-			"product_line",
-			"month": displayed as 'June', 'July', and 'August',
-			"warehouse", and
-			"net_revenue": the sum of total minus the sum of "payment_fee".
-			The results should be sorted by "product_line" and "month", followed by "net_revenue" in descending order.
+Your goal is to analyze the revenue generated from **'Wholesale'** transactions for each **product line**, segmented by **month** and **warehouse**.
+
+You will write an SQL query that performs the following:
+
+- Filters the dataset to include only rows where the `channel` is `'Wholesale'`.
+- Calculates **net revenue** as the **sum of `total` minus the sum of `payment_fee`**.
+- Extracts the **month** from the `date` column and displays it as full month names: `'June'`, `'July'`, and `'August'`.
+- Groups the results by:
+  - `product_line`
+  - `month`
+  - `warehouse`
+- Sorts the results by:
+  - `product_line`
+  - `month`
+  - `net_revenue` in **descending order**.
+- Saves the final output as a named result: **`revenue_by_product_line`**.
+
+This query will help identify which product lines and warehouses are driving the most revenue during the summer months.
 	
 
