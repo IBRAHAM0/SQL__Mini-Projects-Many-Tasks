@@ -1,32 +1,42 @@
-Analyzing and Formatting PostgreSQL Sales Data - "DataCamp Project"
-	
-Cleaning incorrect data types and missing values.
 
-Project Description:
-	Work with superstore data in PostgreSQL, reformatting and analyzing to answer some day-to-day retail business questions,
-	like what are the top performing products, and how missing data can be imputed for quantity of products per order.
+# Analyzing and Formatting PostgreSQL Sales Data - "DataCamp Project"
 
-	Task1: 
-		Find the top 5 products from each category based on highest total sales. The output should be sorted by category in ascending order and by sales 
-		in descending order within each category, i.e. within each category product with highest margin should sit on the top. Include the following columns in your data:
-		
-			category, 
-			product_name, 
-			product_total_sales (rounded to two decimal places), 
-			product_total_profit (rounded to two decimal places), 
-			product_rank
-			
-	
-	Task2: 
-		Calculate the quantity for orders with missing values in the quantity column. To do this, first calculate the unit price for each product 
-		based on the orders where the quantity is available, considering factors that might affect pricing. Then, use this unit price to estimate 
-		the missing quantity values for orders where the quantity is missing. The calculated values should be stored in the calculated_quantity column. 
-		Include the following columns in your data:
-		
-			product_id, 
-			discount, 
-			market, 
-			region, 
-			sales, 
-			quantity, 
-			calculated_quantity (rounded to zero decimal places)
+Incorrect data types and missing values are to be cleaned and prepared for analysis.
+
+## Project Description:
+
+A PostgreSQL-based dataset of superstore transactions is to be reformatted and analyzed in order to address common retail business questions. These include identifying top-performing products and imputing missing values in product quantity per order.
+
+## Task 1:
+
+The top 5 products from each category are to be identified based on the highest total sales.
+
+The following steps should be followed:
+- Total sales and profit must be calculated for each product.
+- Products should be ranked within their respective categories by total sales in descending order.
+- The output must be sorted by:
+  - `category` in ascending order
+  - `sales` in descending order within each category.
+- The following columns must be included:
+  - `category`
+  - `product_name`
+  - `product_total_sales` (rounded to two decimal places)
+  - `product_total_profit` (rounded to two decimal places)
+  - `product_rank`
+
+## Task 2:
+
+Quantities for orders with missing values in the `quantity` column are to be estimated.
+
+The following process should be applied:
+- The unit price for each product must be calculated using the available quantity data, taking into account relevant pricing factors.
+- This unit price should then be used to estimate missing quantities for orders where `quantity` is not recorded.
+- Estimated values must be stored in a new column: `calculated_quantity` (rounded to zero decimal places).
+- The following columns must be included:
+  - `product_id`
+  - `discount`
+  - `market`
+  - `region`
+  - `sales`
+  - `quantity`
+  - `calculated_quantity`
