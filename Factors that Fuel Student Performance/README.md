@@ -1,47 +1,48 @@
-Factors that Fuel Student Performance
 
+# Factors that Fuel Student Performance
 
-Project Description:
+## Project Description:
 
-How can students improve their exam performance? In this intermediate SQL querying project, you will analyze a database containing 
-comprehensive data on various factors influencing student success, such as study habits, sleep patterns, parental involvement, and access to resources.
+The question of how exam performance can be improved is explored in this intermediate SQL querying project. A database containing comprehensive data on various factors influencing student success—such as study habits, sleep patterns, parental involvement, and access to resources—is analyzed.
 
-Through SQL queries, you will investigate which factors have the greatest impact on high exam scores, 
-explore whether students who participate in more extracurricular activities perform better, and ascertain the influence of sleep on academic achievement. 
-By the end, you will have a data-driven understanding of the drivers of student success, enabling you to make informed decisions for academic improvement.
+Through a series of SQL queries, the impact of different behaviors and conditions on academic achievement is examined. The analysis includes identifying the most influential factors behind high exam scores, assessing whether participation in extracurricular activities correlates with better performance, and determining the effects of sleep duration on academic outcomes. By the conclusion of the project, a data-driven understanding of the key drivers of student success will be developed to support more informed academic strategies.
 
+## Task 1:
 
-	Task 1: 
-			Do more study hours and extracurricular activities lead to better scores? Analyze how studying more than 10 hours per week, 
-			while also participating in extracurricular activities, impacts exam performance. 
-			
-				The output should include two columns: 
-					1) hours_studied  
-					2) avg_exam_score. 
-					
-				Group and sort the results by hours_studied in descending order.
-				
-				
-	Task 2: 
-			Is there a sweet spot for study hours? Explore how different ranges of study hours impact exam performance by calculating the average exam score for each study range.
-			Categorize students into four groups based on hours studied per week: 1-5 hours, 6-10 hours, 11-15 hours, and 16+ hours. 
-			
-				The output should contain two columns: 
-					1) hours_studied_range  
-					2) avg_exam_score. 
-					
-				Group the results by hours_studied_range and sort them by avg_exam_score in descending order. 
+The relationship between extended study hours, extracurricular involvement, and exam performance is to be analyzed. Specifically, the focus is on students who study more than 10 hours per week and also participate in extracurricular activities.
 
+The output should include the following columns:
+- `hours_studied`
+- `avg_exam_score`
 
-	Task 3: 
-			A teacher wants to show their students their relative rank in the class, without revealing their exam scores to each other. 
-			Use a window function to assign ranks based on exam_score, ensuring that students with the same exam score share the same rank and no ranks are skipped. 
-			
-				Return the columns: 
-					attendance, 
-					hours_studied, 
-					sleep_hours, 
-					tutoring_sessions, 
-					exam_rank. 
-					
-				The students with the highest exam score should be at the top of the results, so order your query by exam_rank in ascending order. Limit your query to 30 students.
+The results must be grouped and sorted by `hours_studied` in descending order.
+
+## Task 2:
+
+The optimal range of study hours for improved academic performance is to be explored. Students are to be categorized into the following groups based on weekly study hours:
+- 1–5 hours  
+- 6–10 hours  
+- 11–15 hours  
+- 16+ hours  
+
+For each group, the average exam score is to be calculated.
+
+The output should contain:
+- `hours_studied_range`
+- `avg_exam_score`
+
+Results are to be grouped by `hours_studied_range` and sorted by `avg_exam_score` in descending order.
+
+## Task 3:
+
+To maintain student privacy while communicating relative academic performance, a ranking system is to be developed using a window function. Ranks are to be assigned based on `exam_score`, ensuring students with equal scores share the same rank, and no ranks are skipped.
+
+The output must include:
+- `attendance`
+- `hours_studied`
+- `sleep_hours`
+- `tutoring_sessions`
+- `exam_rank`
+
+The dataset is to be ordered by `exam_rank` in ascending order, and the results should be limited to the top 30 students.
+
