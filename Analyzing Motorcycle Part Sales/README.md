@@ -10,9 +10,9 @@ how much net revenue they are generating across their product lines, segregating
 
 ## The Task:
 
-	**Find out how much 'Wholesale' net revenue each "product_line" generated per month per "warehouse" in the dataset:**
+	- **Find out how much 'Wholesale' net revenue each "product_line" generated per month per "warehouse" in the dataset:**
 			
-		**The query should be saved as revenue_by_product_line using the SQL cell provided, and contain the following:**
+		- **The query should be saved as revenue_by_product_line using the SQL cell provided, and contain the following:**
 			"product_line",
 			"month": displayed as 'June', 'July', and 'August',
 			"warehouse", and
